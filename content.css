@@ -1,0 +1,37 @@
+.osa-badge {
+  display: inline-flex;
+  align-items: baseline;
+  margin-left: 6px;
+  padding: 0 6px;
+  border-radius: 4px;
+  background: rgba(127, 127, 127, 0.16);
+  color: inherit;
+  opacity: 0.85;
+  font-size: 0.86em;
+  font-weight: 400;
+  line-height: 1.5;
+  white-space: nowrap;
+  cursor: copy;
+  vertical-align: baseline;
+  flex-shrink: 0;
+}
+.osa-badge:hover {
+  opacity: 1;
+  background: rgba(127, 127, 127, 0.28);
+}
+.osa-badge__domain {
+  font-weight: 600;
+}
+.osa-badge--list {
+  font-size: 0.8em;
+  padding: 0 4px;
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.osa-badge--copied::after {
+  content: " ✓ コピー";
+  font-weight: 600;
+  margin-left: 4px;
+}

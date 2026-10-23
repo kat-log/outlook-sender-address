@@ -1,0 +1,76 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1f1f1f;
+  --sub: #666;
+  --line: #e5e5e5;
+  --accent: #0f6cbd;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1f1f1f;
+    --fg: #f0f0f0;
+    --sub: #aaa;
+    --line: #333;
+    --accent: #479ef5;
+  }
+}
+body {
+  width: 280px;
+  margin: 0;
+  padding: 12px 14px;
+  background: var(--bg);
+  color: var(--fg);
+  font: 13px/1.4 system-ui, -apple-system, "Hiragino Sans", "Segoe UI", sans-serif;
+}
+h1 {
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+  cursor: pointer;
+}
+.row small {
+  display: block;
+  color: var(--sub);
+  font-size: 11px;
+}
+input[type="checkbox"] {
+  appearance: none;
+  flex-shrink: 0;
+  width: 34px;
+  height: 20px;
+  border-radius: 10px;
+  background: var(--line);
+  position: relative;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+input[type="checkbox"]::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.15s;
+}
+input[type="checkbox"]:checked {
+  background: var(--accent);
+}
+input[type="checkbox"]:checked::after {
+  transform: translateX(14px);
+}
+.note {
+  margin: 6px 0 0;
+  color: var(--sub);
+  font-size: 11px;
+}
