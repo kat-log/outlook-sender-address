@@ -37,3 +37,7 @@ Outlook 側の DOM 変更で動かなくなる可能性があります。その�
 ## 免責
 
 Microsoft および Outlook は Microsoft Corporation の商標です。本拡張機能は Microsoft とは無関係の非公式ツールです。
+
+## ストア掲載素材
+
+`store/` にスクリーンショット（1280×800）、プロモタイル（440×280）、掲載文（`LISTING.md`）があります。拡張機能本体のパッケージには含めません。
