@@ -1,11 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Outlook 差出人アドレス表示",
+  "name": "__MSG_extName__",
   "version": "1.0.0",
-  "description": "Outlook on the web で、差出人名の横にメールアドレスを常に表示します。ホバー不要でなりすましも見抜きやすく。",
-  "permissions": ["storage"],
+  "description": "__MSG_extDescription__",
+  "default_locale": "en",
+  "homepage_url": "https://github.com/kat-log/outlook-sender-address",
+  "permissions": [
+    "storage"
+  ],
   "action": {
-    "default_title": "Outlook 差出人アドレス表示",
+    "default_title": "__MSG_extName__",
     "default_popup": "popup.html",
     "default_icon": {
       "16": "icons/icon16.png",
@@ -28,8 +32,12 @@
         "https://outlook.live.com/*",
         "https://outlook.cloud.microsoft/*"
       ],
-      "js": ["content-bridge.js"],
-      "css": ["content.css"],
+      "js": [
+        "content-bridge.js"
+      ],
+      "css": [
+        "content.css"
+      ],
       "run_at": "document_idle"
     },
     {
@@ -39,7 +47,9 @@
         "https://outlook.live.com/*",
         "https://outlook.cloud.microsoft/*"
       ],
-      "js": ["content-main.js"],
+      "js": [
+        "content-main.js"
+      ],
       "world": "MAIN",
       "run_at": "document_idle"
     }

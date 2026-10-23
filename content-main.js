@@ -11,6 +11,10 @@
   const root = document.documentElement;
   const BADGE = 'osa-badge';
   const EMAIL_RE = /^[^@\s<>]+@[^@\s<>]+\.[^@\s<>]+$/;
+  const JA = (navigator.language || '').toLowerCase().startsWith('ja');
+  const T = JA
+    ? { hint: 'クリックでアドレスをコピー', copied: '✓ コピー' }
+    : { hint: 'Click to copy address', copied: '✓ Copied' };
 
   const settings = () => ({
     reading: root.dataset.osaReading !== '0', // 既定 ON
@@ -56,7 +60,8 @@
     const b = document.createElement('span');
     b.className = `${BADGE} ${BADGE}--${kind}`;
     b.dataset.email = email;
-    b.title = 'クリックでアドレスをコピー';
+    b.title = T.hint;
+    b.dataset.copiedLabel = T.copied;
     const at = email.lastIndexOf('@');
     const local = document.createElement('span');
     local.className = `${BADGE}__local`;

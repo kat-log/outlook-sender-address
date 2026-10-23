@@ -1,6 +1,9 @@
-# Outlook 差出人アドレス表示
+# 差出人アドレス表示 for Outlook
 
-Outlook on the web（`outlook.office.com` / `outlook.live.com` ほか）で、差出人名の右にメールアドレスを常に表示する Chrome 拡張機能です。
+**Sender Address Viewer for Outlook** — Outlook on the web で差出人名の横にメールアドレスを常に表示する Chrome 拡張機能。
+
+対応: `outlook.office.com` / `outlook.office365.com` / `outlook.live.com` / `outlook.cloud.microsoft`
+
 Outlook Web は標準では差出人名しか出さず、アドレスはホバーしないと見えません（設定でも変更不可）。
 
 ## 機能
@@ -26,3 +29,11 @@ Outlook Web は標準では差出人名しか出さず、アドレスはホバ�
 React の内部データを読むため、`content-main.js` は `world: "MAIN"` で動作します。設定は `content-bridge.js`（isolated world）が `chrome.storage.sync` から読み、`<html data-osa-*>` 属性経由で渡します。
 
 Outlook 側の DOM 変更で動かなくなる可能性があります。その場合は上記セレクタを見直してください。
+
+## プライバシー
+
+データの収集・送信は一切行いません。詳しくは [PRIVACY.md](PRIVACY.md) を参照してください。
+
+## 免責
+
+Microsoft および Outlook は Microsoft Corporation の商標です。本拡張機能は Microsoft とは無関係の非公式ツールです。

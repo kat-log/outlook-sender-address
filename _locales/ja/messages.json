@@ -1,0 +1,10 @@
+{
+  "extName": { "message": "差出人アドレス表示 for Outlook" },
+  "extDescription": { "message": "Outlook on the web で、差出人名の横にメールアドレスを常に表示。ホバー不要で、なりすましメールも見抜きやすく。" },
+  "popupTitle": { "message": "差出人アドレス表示" },
+  "readingLabel": { "message": "開いたメール" },
+  "readingDesc": { "message": "閲覧ウィンドウの差出人名の右に表示" },
+  "listLabel": { "message": "メール一覧" },
+  "listDesc": { "message": "受信トレイ各行の差出人名の右に表示" },
+  "note": { "message": "アドレスをクリックするとコピーできます。" }
+}

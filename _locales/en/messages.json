@@ -1,0 +1,10 @@
+{
+  "extName": { "message": "Sender Address Viewer for Outlook" },
+  "extDescription": { "message": "Always show the sender's email address next to their name in Outlook on the web. No hovering — spot spoofed senders at a glance." },
+  "popupTitle": { "message": "Sender Address Viewer" },
+  "readingLabel": { "message": "Opened message" },
+  "readingDesc": { "message": "Show next to the sender name in the reading pane" },
+  "listLabel": { "message": "Message list" },
+  "listDesc": { "message": "Show next to the sender name in each inbox row" },
+  "note": { "message": "Click an address to copy it." }
+}
