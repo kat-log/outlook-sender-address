@@ -83,7 +83,7 @@ Content scripts run only on Outlook on the web domains to read the sender's addr
 
 ## プロモーション動画・追加URL
 
-- プロモーション動画（日本語）: https://youtu.be/o5nKh7ymOpU
-- プロモーション動画（English）: https://youtu.be/Kz3tHvdSppU
+- プロモーション動画（日本語）: https://youtu.be/iqoe1_WCcKM
+- プロモーション動画（English）: https://youtu.be/-NmUZ48yMqw
 - 公式URL / ホームページURL: https://kat-log.github.io/outlook-sender-address/
 - マーキー: store/marquee-ja-1400x560.png / store/marquee-en-1400x560.png

@@ -96,7 +96,8 @@
   const upsertBadge = (anchor, email, kind) => {
     const next = anchor.nextElementSibling;
     const existing = next && next.classList.contains(BADGE) ? next : null;
-    if (!email || anchor.textContent.trim().toLowerCase() === email.toLowerCase()) {
+    // Outlook 自身がアドレスを表示している場合（「名前<アドレス>」など）は出さない
+    if (!email || anchor.textContent.toLowerCase().includes(email.toLowerCase())) {
       existing?.remove();
       return;
     }
@@ -119,6 +120,11 @@
         h.querySelector('[role="button"]') ||
         h.firstElementChild;
       if (!target) return;
+      // Outlook が差出人部分を描き直すと、古いバッジが別の位置に残ることがある。
+      // 見出しの中のバッジは 1 つだけにする（target の直後のもの以外は消す）。
+      h.querySelectorAll(`.${BADGE}--reading`).forEach((b) => {
+        if (b !== target.nextElementSibling) b.remove();
+      });
       upsertBadge(target, findEmailInFiber(target), 'reading');
     });
   };

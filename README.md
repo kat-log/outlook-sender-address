@@ -2,9 +2,9 @@
 
 **Sender Address Viewer for Outlook** — Outlook on the web で差出人名の横にメールアドレスを常に表示する Chrome 拡張機能。
 
-[![紹介動画（日本語）](docs/img/promo-thumbnail-ja.jpg)](https://youtu.be/o5nKh7ymOpU)
+[![紹介動画（日本語）](docs/img/promo-thumbnail-ja.jpg)](https://youtu.be/iqoe1_WCcKM)
 
-紹介動画：[日本語](https://youtu.be/o5nKh7ymOpU) / [English](https://youtu.be/Kz3tHvdSppU) ・ 公式サイト：https://kat-log.github.io/outlook-sender-address/
+紹介動画：[日本語](https://youtu.be/iqoe1_WCcKM) / [English](https://youtu.be/-NmUZ48yMqw) ・ 公式サイト：https://kat-log.github.io/outlook-sender-address/
 
 対応: `outlook.office.com` / `outlook.office365.com` / `outlook.live.com` / `outlook.cloud.microsoft`
 
