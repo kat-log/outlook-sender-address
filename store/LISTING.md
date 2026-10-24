@@ -78,3 +78,10 @@ Content scripts run only on Outlook on the web domains to read the sender's addr
 ### データ使用
 収集するデータ: なし（すべてのチェックボックスを未選択）
 - 販売・転送しない / 用途外で使用しない / 信用力判断に使用しない に同意
+
+## プロモーション動画・追加URL
+
+- プロモーション動画（日本語）: https://youtu.be/o5nKh7ymOpU
+- プロモーション動画（English）: https://youtu.be/Kz3tHvdSppU
+- 公式URL / ホームページURL: https://kat-log.github.io/outlook-sender-address/
+- マーキー: store/marquee-ja-1400x560.png / store/marquee-en-1400x560.png
