@@ -22,6 +22,9 @@
 .osa-badge__domain {
   font-weight: 600;
 }
+html[data-osa-bold="0"] .osa-badge__domain {
+  font-weight: inherit;
+}
 .osa-badge--list {
   font-size: 0.8em;
   padding: 0 4px;

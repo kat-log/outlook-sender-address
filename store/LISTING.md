@@ -17,8 +17,9 @@ Outlook on the web では、差出人の「表示名」しか見えず、メー�
 ■ 主な機能
 ・開いたメールの差出人名の横に、メールアドレスを常に表示
 ・メール一覧（受信トレイの各行）にも表示可能（ポップアップでON/OFF）
-・ドメイン部分（@以降）を太字で表示し、なりすましメールに気づきやすく
+・ドメイン部分（@以降）を太字で表示し、なりすましメールに気づきやすく（オフにも可）
 ・アドレスをクリックするとコピー
+・表示言語は自動／日本語／English から選択可能
 
 ■ こんな方に
 ・表示名だけでは誰からのメールか判別しづらい
@@ -42,8 +43,9 @@ Sender Address Viewer for Outlook always shows the email address right next to t
 Features
 • Always shows the sender's email address next to their name in the opened message
 • Optionally shows addresses in the message list too (toggle in the popup)
-• The domain (after @) is shown in bold, so spoofed senders stand out
+• The domain (after @) is shown in bold, so spoofed senders stand out (can be turned off)
 • Click an address to copy it
+• Choose the display language: Auto / 日本語 / English
 
 Great if you
 • Can't tell who sent an email from the display name alone

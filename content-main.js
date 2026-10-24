@@ -11,10 +11,17 @@
   const root = document.documentElement;
   const BADGE = 'osa-badge';
   const EMAIL_RE = /^[^@\s<>]+@[^@\s<>]+\.[^@\s<>]+$/;
-  const JA = (navigator.language || '').toLowerCase().startsWith('ja');
-  const T = JA
-    ? { hint: 'クリックでアドレスをコピー', copied: '✓ コピー' }
-    : { hint: 'Click to copy address', copied: '✓ Copied' };
+  const TEXT = {
+    ja: { hint: 'クリックでアドレスをコピー', copied: '✓ コピー' },
+    en: { hint: 'Click to copy address', copied: '✓ Copied' },
+  };
+  // 言語: ポップアップで選んだ値（ja / en）、自動（auto）ならブラウザの言語
+  const uiLang = () => {
+    const l = root.dataset.osaLang;
+    if (l === 'ja' || l === 'en') return l;
+    return (navigator.language || '').toLowerCase().startsWith('ja') ? 'ja' : 'en';
+  };
+  const T = () => TEXT[uiLang()];
 
   const settings = () => ({
     reading: root.dataset.osaReading !== '0', // 既定 ON
@@ -60,8 +67,8 @@
     const b = document.createElement('span');
     b.className = `${BADGE} ${BADGE}--${kind}`;
     b.dataset.email = email;
-    b.title = T.hint;
-    b.dataset.copiedLabel = T.copied;
+    b.title = T().hint;
+    b.dataset.copiedLabel = T().copied;
     const at = email.lastIndexOf('@');
     const local = document.createElement('span');
     local.className = `${BADGE}__local`;
@@ -126,10 +133,23 @@
     });
   };
 
+  // 言語が切り替わったら、表示中のバッジの文言も更新する
+  let lastLang = null;
+  const relabel = () => {
+    const l = uiLang();
+    if (l === lastLang) return;
+    lastLang = l;
+    document.querySelectorAll(`.${BADGE}`).forEach((b) => {
+      b.title = T().hint;
+      b.dataset.copiedLabel = T().copied;
+    });
+  };
+
   // ---------- 実行ループ ----------
   let scheduled = false;
   const run = () => {
     scheduled = false;
+    relabel();
     const s = settings();
     s.reading ? renderReading() : removeBadges('reading');
     s.list ? renderList() : removeBadges('list');
@@ -150,7 +170,7 @@
 
   new MutationObserver(schedule).observe(root, {
     attributes: true,
-    attributeFilter: ['data-osa-reading', 'data-osa-list'],
+    attributeFilter: ['data-osa-reading', 'data-osa-list', 'data-osa-lang'],
   });
 
   schedule();
