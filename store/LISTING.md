@@ -2,6 +2,8 @@
 
 ## 基本
 
+- ストアURL: https://chromewebstore.google.com/detail/pmiaoemkokfnbanjjdfkafpcnppegdjm
+
 - カテゴリ: 仕事効率化 (Productivity) > ツール
 - 言語: 日本語 / English
 - ホームページ: https://github.com/kat-log/outlook-sender-address

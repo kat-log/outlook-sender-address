@@ -4,7 +4,7 @@
 
 [![紹介動画（日本語）](docs/img/promo-thumbnail-ja.jpg)](https://youtu.be/iqoe1_WCcKM)
 
-紹介動画：[日本語](https://youtu.be/iqoe1_WCcKM) / [English](https://youtu.be/-NmUZ48yMqw) ・ 公式サイト：https://kat-log.github.io/outlook-sender-address/
+**[Chrome ウェブストアで追加](https://chromewebstore.google.com/detail/pmiaoemkokfnbanjjdfkafpcnppegdjm)** ・ 紹介動画：[日本語](https://youtu.be/iqoe1_WCcKM) / [English](https://youtu.be/-NmUZ48yMqw) ・ 公式サイト：https://kat-log.github.io/outlook-sender-address/
 
 対応: `outlook.office.com` / `outlook.office365.com` / `outlook.live.com` / `outlook.cloud.microsoft`
 
@@ -18,7 +18,11 @@ Outlook Web は標準では差出人名しか出さず、アドレスはホバ�
 - 表示言語を「自動 / 日本語 / English」から選択（既定は自動）
 - バッジをクリックでアドレスをコピー
 
-## インストール（開発版）
+## インストール
+
+[Chrome ウェブストア](https://chromewebstore.google.com/detail/pmiaoemkokfnbanjjdfkafpcnppegdjm) から追加してください。
+
+### 開発版
 
 1. `chrome://extensions` を開き「デベロッパーモード」を ON
 2. 「パッケージ化されていない拡張機能を読み込む」でこのフォルダを選択
